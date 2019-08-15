@@ -11,5 +11,11 @@ func main() {
 
 	delete(students, "name")
 	fmt.Println(students)
+	fmt.Println(students["sdfghgfd"])
+	v, ok := students["sdfg"]
+	if !ok {
+		fmt.Println(ok)
+	}
+	fmt.Println(v)
 
 }
